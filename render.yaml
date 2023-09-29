@@ -4,6 +4,6 @@ services:
     name: Plant-Disease-Detection
     env: python
     buildCommand: pip install -r requirements.txt
-    startCommand: python -m Adarsh
+    startCommand: gunicorn app:app
     repo: https://github.com/Thorsaboy/Plant-Disease-Detection     
     branch: main
